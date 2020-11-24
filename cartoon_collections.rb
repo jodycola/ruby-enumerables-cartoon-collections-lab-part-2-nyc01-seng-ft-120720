@@ -13,7 +13,7 @@ def summon_captain_planet(planeteer_calls)
   # Return a new array of the results
   new = []
   planeteer_calls.map do |x|
-    new << x[0].upcase + "!"
+    new << x[0].upcase + x[1..-1] + "!"
   end
   return new
 end
